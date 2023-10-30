@@ -12,7 +12,7 @@ int main(){
     printf("Select 6 for finding Pressure\n");
     printf("Select 7 for finding Power\n");
     printf("select any number : ");
-    scanf("%d",z);
+    scanf("%d",&z);
 
     switch (z)
     {
