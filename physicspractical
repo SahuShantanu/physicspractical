@@ -1,0 +1,81 @@
+#include<stdio.h>
+
+int main(){
+    int z;
+    float mass,velocity,force,acceleration,energy,distance,work,time,area;
+
+    printf("Select 1 for finding Linear momentum\n");
+    printf("Select 2 for finding Force\n");
+    printf("Select 3 for finding Work\n");
+    printf("Select 4 for finding Energy\n");
+    printf("Select 5 for finding Impulse\n");
+    printf("Select 6 for finding Pressure\n");
+    printf("Select 7 for finding Power\n");
+    printf("select any number : ");
+    scanf("%d",z);
+
+    switch (z)
+    {
+    case 1:
+        printf("enter the value of mass : ");
+        scanf("%f",&mass);
+        printf("enter the value of velocity : ");
+        scanf("%f",&velocity);
+        printf("your momentum is %.2fkgm/s",mass*velocity);
+        break;
+
+        case 2:
+        printf("enter the value of mass : ");
+        scanf("%f",&mass);
+        printf("enter the value of Acceleration : ");
+        scanf("%f",&acceleration);
+        printf("your Force is %.2fN",mass*acceleration);
+        break;
+
+        case 3:
+        printf("enter the value of Force : ");
+        scanf("%f",&force);
+        printf("enter the value of Distance : ");
+        scanf("%f",&distance);
+        printf("your work is %.2fJ",force*distance);
+        break;
+
+        case 4:
+        printf("enter the value of mass : ");
+        scanf("%f",&mass);
+        printf("enter the value of velocity : ");
+        scanf("%f",&velocity);
+        printf("your energy is %.2fJ",1/2*(mass*velocity*velocity));
+        break;
+
+        case 5:
+        printf("enter the value of mass : ");
+        scanf("%f",&force);
+        printf("enter the value of velocity : ");
+        scanf("%f",&time);
+        printf("your impulse is %.2fNs",force*time);
+        break;
+
+        case 6:
+        printf("enter the value of force : ");
+        scanf("%f",&force);
+        printf("enter the value of area : ");
+        scanf("%f",&area);
+        printf("your Pressure is %.2fNm-2",force/area);
+        break;
+
+        case 7:
+        printf("enter the value of Work : ");
+        scanf("%f",&work);
+        printf("enter the value of Time : ");
+        scanf("%f",&time);
+        printf("your power is %.2fw",work/time);
+        break;
+
+        
+    default:
+    printf("you enter invalid number.");
+        break;
+    }
+        return 0;
+}
