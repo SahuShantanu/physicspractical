@@ -2,7 +2,7 @@
 
 int main(){
     int z;
-    float mass,velocity,force,acceleration,energy,distance,work,time,area;
+    float mass,velocity,force,acceleration,energy,distance,work,time,area,v,i,gravity,height;
 
     printf("Select 1 for finding Linear momentum\n");
     printf("Select 2 for finding Force\n");
@@ -11,7 +11,9 @@ int main(){
     printf("Select 5 for finding Impulse\n");
     printf("Select 6 for finding Pressure\n");
     printf("Select 7 for finding Power\n");
-    printf("Select 8 for finding Power\n");
+    printf("Select 8 for finding Stres\n");
+    printf("Select 9 for finding Resistance\n");
+    printf("Select 10 for finding Potential Energy\n");
     printf("select any number : ");
     scanf("%d",&z);
 
@@ -78,7 +80,25 @@ int main(){
         scanf("%f",&force);
         printf("enter the value of Area : ");
         scanf("%f",&area);
-        printf("your power is %.2fw",force/area);
+        printf("your stress is %.2fN/m2",force/area);
+        break;
+
+        case 9:
+        printf("enter the value of v : ");
+        scanf("%f",&v);
+        printf("enter the value of i : ");
+        scanf("%f",&i);
+        printf("your resistance is %.2f(Ω)",v/i);
+        break;
+
+        case 10:
+        printf("enter the value of mass : ");
+        scanf("%f",&mass);
+        printf("enter the value of gravity : ");
+        scanf("%f",&gravity);
+        printf("enter the value of height : ");
+        scanf("%f",&height);
+        printf("your Potential energy is %.2fJ",mass*gravity*height);
         break;
         
     default:
