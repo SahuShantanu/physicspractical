@@ -11,6 +11,7 @@ int main(){
     printf("Select 5 for finding Impulse\n");
     printf("Select 6 for finding Pressure\n");
     printf("Select 7 for finding Power\n");
+    printf("Select 8 for finding Power\n");
     printf("select any number : ");
     scanf("%d",&z);
 
