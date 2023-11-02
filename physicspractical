@@ -72,6 +72,13 @@ int main(){
         printf("your power is %.2fw",work/time);
         break;
 
+        case 8:
+        printf("enter the value of force : ");
+        scanf("%f",&force);
+        printf("enter the value of Area : ");
+        scanf("%f",&area);
+        printf("your power is %.2fw",force/area);
+        break;
         
     default:
     printf("you enter invalid number.");
